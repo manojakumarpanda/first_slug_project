@@ -1,0 +1,17 @@
+{% extends 'post/base.html' %}
+</head>
+<body>
+    {% block cotainer %}
+        <center>
+            <form method="post" enctype="multipart/form-data" action="/list_page">
+                {% csrf_token %}
+                {{ form.as_table }}
+                <center>
+                    <input type="submit" value="submit">
+                </center>
+
+            </form>
+        </center>
+    {% endblock %}
+</body>
+</html>

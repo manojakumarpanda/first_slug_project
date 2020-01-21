@@ -1,0 +1,23 @@
+{% extends 'post/base.html' %}
+<body>
+    {% block cotainer %}
+        <div class="container">
+            {% if data %}
+                {% for deta in data %}
+                    <center>
+                        <h2>{{ deta.title }}</h2>
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                        <a href="{% url 'detail_page' deta.slug %}">detail click here</a>
+                    </center>
+                {% endfor %}
+            {% else %}
+
+                    <h3>NO data to display</h3>
+            {% endif %}
+        </div>
+    {% endblock %}
+</body>
+</html>
