@@ -1,11 +1,26 @@
 from django.shortcuts import render,HttpResponse,get_object_or_404
 from .models import Post
 from .forms import create
+from django.views.generic import View,ListView
+from math import ceil
 
 # Create your views here.
-def list_display(request):
-    data=Post.objects.all()
-    return render(request,'post/list_page.html',context={'data':data,'titles':'This is listing all the posts'})
+class list_display(ListView):
+    template_name = 'post/list_page.html'
+    model = Post
+    context_object_name = 'data'
+    paginate_by = 3
+
+    def get_context_data(self, **kwargs):
+        data = super().get_context_data(**kwargs)
+        num=Post.objects.all()
+        slide=len(num)//3+ceil((len(num)/3)-len(num)//3)
+        data['pagenum'] = range(1,slide+1)
+        return data
+    # def get(self,request,*args,**kwargs):
+    #     data=Post.objects.all().order_by('-id')
+    #
+    #     return render(request,'post/list_page.html',context={'data':data,'titles':'This is listing all the posts'})
 
 def detail_display(request,slug=None):
     data=get_object_or_404(Post,slug=slug)

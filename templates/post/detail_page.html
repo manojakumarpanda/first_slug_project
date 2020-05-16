@@ -1,12 +1,13 @@
 {% extends 'post/base.html' %}
 <body>
     {% block cotainer %}
-        <a href="/list_display"> back</a>
+        <a href="{% url 'list_display' %}"> back</a>
         <center>
             <h4>{{ data.title }}</h4>
             <div class="image">&nbsp;&nbsp;&nbsp;
                 <img src="{{ data.image.url }}" alt="No pic soon updated" height="80px" width="100px">
-            </div>
+            </div>{{ data.context }}
+
         </center>
     {% endblock %}
 </body>

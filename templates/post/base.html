@@ -58,9 +58,8 @@
   </div>
 </nav>
     <div class="links">
-        <a href="http://127.0.0.1:8000/admin" class="btn btn-primary">admin</a>
-        <a href="http://127.0.0.1:8000/create" class="btn btn-primary">create</a>
-        <a href="/list_display" class="btn btn-primary"> back</a>
+        <a href="{% url 'create_display' %}" class="btn btn-primary">create</a>
+        <a href="{% url 'list_display' %}" class="btn btn-primary"> back</a>
     </div>
     {% block cotainer %}
 

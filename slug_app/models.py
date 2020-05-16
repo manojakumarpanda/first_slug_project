@@ -24,22 +24,39 @@ class Post(models.Model):
 
     def __str__(self):
         return 'title is:{}'.format(self.title)
+    class Meta:
+        ordering=['-id']
 
     def get_absolute_url(self):
         return reverse('detail_page',kwargs={'slug':self.slug})
 
 
+# def create_slug(instance,new_slug=None):
+#     slug=slugify(instance.title)
+#     if new_slug is not None:
+#         slug=new_slug
+#     qs=Post.objects.filter(slug=slug).order_by('-id')
+#     exists=qs.exists()
+#     if exists:
+#         new_slug=" {}-{} ".format(slug,qs.first().id)
+#         return create_slug(instance,new_slug)
+#     return slug
+
+import string
+import random
 def create_slug(instance,new_slug=None):
     slug=slugify(instance.title)
     if new_slug is not None:
         slug=new_slug
-    qs=Post.objects.filter(slug=slug).order_by('-id')
-    exists=qs.exists()
-    if exists:
-        new_slug=" {}-{} ".format(slug,qs.first().id)
-        return create_slug(instance,new_slug)
+    quary=Post.objects.filter(slug=slug)
+    exist=quary.exists()
+    if exist:
+        random_str=''
+        for i in range(7):
+            random_str+=random.choice(string.ascii_letters)
+        new_slug= '{}-{}'.format(slug,random_str)
+        return create_slug(instance,new_slug=new_slug)
     return slug
-
 
 @receiver(signals.pre_save, sender=Post)
 def presave_post_reciver(sender,instance,*args,**kwargs):

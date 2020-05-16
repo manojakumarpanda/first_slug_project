@@ -10,9 +10,32 @@
                                 &nbsp;
                                 &nbsp;
                                 &nbsp;
-                        <a href="{% url 'detail_page' deta.slug %}">detail click here</a>
+                        <a href="{{ deta.get_absolute_url }}">detail click here</a>
                     </center>
                 {% endfor %}
+                <center>
+                    {% if is_paginated %}
+                      <ul class="pagination">
+                        {% if pagenum.has_previous %}
+                          <li><a href="?page={{ pagenum.previous_page_number }}">&laquo;</a></li>
+                        {% else %}
+                          <li class="disabled"><span>&laquo;</span></li>
+                        {% endif %}
+                        {% for i in paginator.page_range %}
+                          {% if pagenum.number == i %}
+                            <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+                          {% else %}
+                            <li><a href="?page={{ i }}">{{ i }}</a></li>
+                          {% endif %}
+                        {% endfor %}
+                        {% if pagenum.has_next %}
+                          <li><a href="?page={{ pagenum.next_page_number }}">&raquo;</a></li>
+                        {% else %}
+                          <li class="disabled"><span>&raquo;</span></li>
+                        {% endif %}
+                      </ul>
+                    {% endif %}
+                </center>
             {% else %}
 
                     <h3>NO data to display</h3>
@@ -20,4 +43,9 @@
         </div>
     {% endblock %}
 </body>
-</html>
+<!--<li class="page-item active">
+                              <span class="page-link">
+
+                                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                        </span>
+                        </li>

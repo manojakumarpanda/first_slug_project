@@ -23,7 +23,7 @@ from slug_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.list_display,name='list_display'),
+    path('',views.list_display.as_view(),name='list_display'),
     path('list_display/',views.list_display,name='list_page'),
     path('create/',views.create_post,name='create_display'),
     path('detail/<str:slug>/',views.detail_display,name='detail_page'),

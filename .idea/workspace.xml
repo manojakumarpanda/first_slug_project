@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c240d303-6962-4f3b-bc5c-b7a0b1e9d684" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="c240d303-6962-4f3b-bc5c-b7a0b1e9d684" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slug_app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/slug_app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slug_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/slug_app/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slug_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/slug_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slug_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/slug_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slug_pro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/slug_pro/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/post/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/post/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/post/detail_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post/detail_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/post/list_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post/list_page.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,11 +46,22 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1VqGoauoyiiqnl4CVTEahfqFdyK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../browseuploadpro" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -47,18 +70,6 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="slug_pro" type="Python.DjangoServer" factoryName="Django server">
@@ -98,11 +109,47 @@
       <workItem from="1577973389391" duration="13855000" />
       <workItem from="1578029420200" duration="6372000" />
       <workItem from="1579586726159" duration="1053000" />
-      <workItem from="1579587823972" duration="827000" />
+      <workItem from="1579587823972" duration="3641000" />
+      <workItem from="1580359542800" duration="3799000" />
+      <workItem from="1580790973282" duration="1222000" />
+      <workItem from="1580875232949" duration="684000" />
+      <workItem from="1581572215141" duration="816000" />
+      <workItem from="1583076524755" duration="81000" />
+      <workItem from="1583076666953" duration="46000" />
+      <workItem from="1583242600710" duration="47000" />
+      <workItem from="1585405266902" duration="65000" />
+      <workItem from="1585405540977" duration="583000" />
+      <workItem from="1585462993681" duration="506000" />
+      <workItem from="1585479372282" duration="748000" />
+      <workItem from="1585994772579" duration="2008000" />
+      <workItem from="1586426213805" duration="142000" />
+      <workItem from="1588960950257" duration="1220000" />
+      <workItem from="1589041175760" duration="1845000" />
+      <workItem from="1589181067403" duration="2461000" />
+      <workItem from="1589564340265" duration="3361000" />
+      <workItem from="1589625656989" duration="550000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="479" y="126" key="FileChooserDialogImpl" timestamp="1589181114925">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="479" y="126" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1589181114925" />
   </component>
 </project>

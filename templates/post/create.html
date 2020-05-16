@@ -3,7 +3,7 @@
 <body>
     {% block cotainer %}
         <center>
-            <form method="post" enctype="multipart/form-data" action="/list_page">
+            <form method="post" enctype="multipart/form-data" >
                 {% csrf_token %}
                 {{ form.as_table }}
                 <center>
