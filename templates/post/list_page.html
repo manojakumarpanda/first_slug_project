@@ -1,6 +1,30 @@
 {% extends 'post/base.html' %}
+{% load staticfiles %}
 <body>
     {% block cotainer %}
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col s12">
+                    <div class="slider">
+                        <ul  class="slides">
+                           {% for deta in data %}
+                               <li>
+                                   {% if deta.image %}
+                                   <img src="{{ deta.image.url }}" alt="No pic soon updated" height="80px" width="100px">
+                                   <div class="caption right-align">
+                                    &nbsp;&nbsp;
+                                    &nbsp;&nbsp;
+                                   </div>
+                                {% else %}
+                                   <img src="{% static 'media/immage/1.jpg' %}" alt="No pic soon updated" height="80px" width="100px">
+                                    <div class="caption right-align">
+                                {% endif %}
+                               </li>
+                            {% endfor %}
+                        </ul>>
+                </div>
+            </div>
+        </div>
         <div class="container">
             {% if data %}
                 {% for deta in data %}
@@ -22,7 +46,7 @@
                           <li class="disabled"><span>&laquo;</span></li>
                         {% endif %}
                         {% for i in paginator.page_range %}
-                          {% if pagenum.number == i %}
+                          {% if page_obj.number == i %}
                             <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
                           {% else %}
                             <li><a href="?page={{ i }}">{{ i }}</a></li>
@@ -43,9 +67,3 @@
         </div>
     {% endblock %}
 </body>
-<!--<li class="page-item active">
-                              <span class="page-link">
-
-                                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
-                        </span>
-                        </li>

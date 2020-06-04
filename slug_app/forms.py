@@ -1,4 +1,6 @@
 from django import forms
+from crispy_forms.helper import FormHelper
+from crispy_forms import layout
 from .models import Post
 from django.core.validators import ValidationError
 
@@ -17,3 +19,9 @@ class create(forms.ModelForm):
         model=Post
         exclude=('time_stamp','updated_at','slug')
 
+
+    def __init__(self,*args,**kwargs):
+        super().__init__(*args,**kwargs)
+        self.healper=FormHelper()
+        self.healper.form_method='post'
+        self.healper.add_input(layout.Submit('Submit','Create new'))

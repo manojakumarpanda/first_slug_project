@@ -2,19 +2,33 @@ from django.shortcuts import render,HttpResponse,get_object_or_404
 from .models import Post
 from .forms import create
 from django.views.generic import View,ListView
+from django.core.paginator import Paginator,PageNotAnInteger,EmptyPage
 from math import ceil
 
 # Create your views here.
 class list_display(ListView):
+    # def get(self,request,*args,**kwargs):
+    #     user_list = Post.objects.all()
+    #     page = request.GET.get('page', 1)
+    #
+    #     paginator = Paginator(user_list, 10)
+    #     try:
+    #         users = paginator.page(page)
+    #     except PageNotAnInteger:
+    #         users = paginator.page(1)
+    #     except EmptyPage:
+    #         users = paginator.page(paginator.num_pages)
+    #
+    #     return render(request, 'core/user_list.html', {'users': users})
     template_name = 'post/list_page.html'
     model = Post
     context_object_name = 'data'
-    paginate_by = 3
+    paginate_by = 5
 
     def get_context_data(self, **kwargs):
         data = super().get_context_data(**kwargs)
         num=Post.objects.all()
-        slide=len(num)//3+ceil((len(num)/3)-len(num)//3)
+        slide=len(num)//5+ceil((len(num)/5)-len(num)//5)
         data['pagenum'] = range(1,slide+1)
         return data
     # def get(self,request,*args,**kwargs):

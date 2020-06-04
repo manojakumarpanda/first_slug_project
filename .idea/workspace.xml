@@ -1,18 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c240d303-6962-4f3b-bc5c-b7a0b1e9d684" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slug_app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/slug_app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/immage/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/immage/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/immage/100-years-of-men-fashion-1920-1929-lapolo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/immage/100-years-of-men-fashion-1920-1929-lapolo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/immage/100-years-of-men-fashion-1920-1929-lapolo_in5AYiD.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/immage/100-years-of-men-fashion-1920-1929-lapolo_in5AYiD.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/immage/1_6LPAfQf.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/immage/1_6LPAfQf.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/immage/1_DpsUlXX.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/immage/1_DpsUlXX.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/immage/1_tr6TC68.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/immage/1_tr6TC68.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/immage/20160628_103431.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/immage/20160628_103431.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/immage/20160628_103431_xi8kQeG.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/immage/20160628_103431_xi8kQeG.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/immage/20160630_130251.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/immage/20160630_130251.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/immage/20160630_130251_vVMUKzF.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/immage/20160630_130251_vVMUKzF.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/immage/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/immage/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/immage/d5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/immage/d5.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/slug_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/slug_app/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slug_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/slug_app/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/slug_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/slug_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slug_pro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/slug_pro/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slug_pro/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/slug_pro/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/post/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/post/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/post/detail_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post/detail_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/post/list_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post/list_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +96,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\django practice\slug_pro\static" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="slug_pro" type="Python.DjangoServer" factoryName="Django server">
       <module name="slug_pro" />
@@ -127,7 +157,11 @@
       <workItem from="1589041175760" duration="1845000" />
       <workItem from="1589181067403" duration="2461000" />
       <workItem from="1589564340265" duration="3361000" />
-      <workItem from="1589625656989" duration="550000" />
+      <workItem from="1589625656989" duration="5261000" />
+      <workItem from="1589783256593" duration="426000" />
+      <workItem from="1589787770488" duration="599000" />
+      <workItem from="1590051512118" duration="2551000" />
+      <workItem from="1590311421400" duration="4767000" />
     </task>
     <servers />
   </component>

@@ -4,6 +4,7 @@ body{
     text-decoration: none;
 }
 
-.links{
-    margin: 10px;
+.nav-link{
+    border-bottom: azure;
+    box-sizing: border-box;
 }
