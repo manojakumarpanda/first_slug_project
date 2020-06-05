@@ -1,4 +1,4 @@
-Commands:
+Commands for the deployement:
 ### Note these commands are not in the same exact order as the video tutorial
 ### Any errors may be spelling errors in my typing, leave a comment and let me know
 
