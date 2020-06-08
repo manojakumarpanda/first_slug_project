@@ -1,0 +1,72 @@
+**create instance:
+1).login through username and password
+2).generate a ssh key I.e .pem file
+3).go to the file where the .pem file is present
+
+**Setting the putty:
+1).Add the ip address to the Host Name
+2).Give some name in saved sessions and save that
+3).Go to the Connection->ssh->Auth
+4).Select the browse key and select the authntication .ppt file
+5).Then select open and open save this 
+
+**This is for installation of the python and pip
+3).This to update the instance:-sudo apt-get update && sudo apt-get -y upgrade
+4).This is to install python:-sudo apt-get install -y python3-pip
+5).This is to upgrade the python:-sudo pip3 install --upgrade pip
+
+##Not mandetory required:
+6).To uninstall the previous python version:-sudo apt purge -y python2.7
+7).sudo ln -s /usr/bin/python3 /usr/bin/python
+8).(sudo apt install -y python3-pip
+sudo ln -s /usr/bin/pip3 /usr/bin/pip)
+
+**To set the virtual env.
+9).To install the virtual env:-apt-get install python3-virtualenv
+10).To create virtual env:-virtualenv -p /usr/bin/python3 env name
+11).To activate the virtual env:-source virutal_env_name/bin/activate
+
+**Install all the requirement.
+13).To install the django:-pip install django
+14).To install the django_rest:-pip install django_restframework
+15).To create project:-django-admin startproject project_name
+16).To create application:-python manage.py startapp app_name
+
+**To setup the apache or the ngennix
+##Apache
+17).To install the apache web serv.:-sudo apt install apache2
+18).To start the apache server:-sudo apt-get install libapache2-mod-wsgi-py3 <<< $"y"
+19).To configure the apache:-sudo vim /etc/apache2/sites-available/000-default.conf
+20).To restart the server After modification:-sudo service apache2 restart
+
+## Ngenix
+
+
+** To set the database
+
+
+26).To install the mysql:-sudo app-get install python3-dev
+27).To install the mysqlclient:-sudo app-get install libmysqlclient-dev
+28).pip install mysqlclient
+29).set the credentional some where
+		[clent]
+		database='your db_name'
+		user='Username'
+		password='pass'
+		prot=''
+		host=''
+30).Restart mysql:-sudo systemctl restart mysql
+31).
+DATABASE={
+	ENGINE:{
+	OPTIONS:{
+		'read_defaulg_file':'tutorial/auth/mywql.cnf'
+}
+}
+
+}
+32).To check the connection:-
+	python manage.py check
+	python manage.py migrate
+	python manage.py createsuperuser
+	python manage.py runserver 0.0.0.0:8000
